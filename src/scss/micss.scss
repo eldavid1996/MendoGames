@@ -1,0 +1,564 @@
+/* MODIFICACIONES BOOSTRAP */
+// Color propio que he elegido para usar de fondo del body y otros elementos
+$colorPropio: #2a2626;
+
+// Color propio para la variante de color $dark que es el color que quiero
+$dark: $colorPropio;
+
+// Texto de la barra de navegación algo mas grande siempre
+$nav-link-font-size: 1.1em;
+
+// Icono MENÚ que sale cuando la pantalla es pequeña con algo mas de tamaño
+$navbar-toggler-font-size: 2em;
+
+/* IMPORTAR BOSSTRAP */
+@import "../libs/bootstrap-5.3.2/scss/bootstrap";
+
+/* ESTILOS PROPIOS */
+// Centro todo el texto, así será mas fácil ubicar los elementos
+* {
+  text-align: center;
+}
+
+// Cambio el color de fondo y letra a unos que me resultan agradables y que creo que pegan con la finalidad de la web
+body,
+footer * {
+  background-color: $dark;
+  color: $white;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: mar 2500ms ease infinite;
+}
+
+// Efecto para el body y footer que cambia el color
+@keyframes mar {
+  0% {
+    background-color: $colorPropio;
+  }
+  10% {
+    background-color: #2b2727;
+  }
+  20% {
+    background-color: #2e2a2a;
+  }
+  30% {
+    background-color: #302c2c;
+  }
+  40% {
+    background-color: #332f2f;
+  }
+  50% {
+    background-color: #363131;
+  }
+  60% {
+    background-color: #332f2f;
+  }
+  70% {
+    background-color: #302c2c;
+  }
+  80% {
+    background-color: #2e2a2a;
+  }
+  90% {
+    background-color: #2b2727;
+  }
+  100% {
+    background-color: $colorPropio;
+  }
+}
+
+// Un pequeño efecto hover de ampliar para las opciones de la barra de navegacion
+.nav-link:hover {
+  font-size: 1.25em;
+}
+
+// Titulos con animaciones css para todas las páginas
+.titulo-seccion {
+  animation-duration: 3s;
+  animation-name: titulo-seccion;
+  transition-delay: 1000ms;
+}
+
+// Igual pero aparece por el otro lado
+.titulo-seccion-inverso {
+  animation-duration: 3s;
+  animation-name: titulo-seccion-inverso;
+  transition-delay: 1000ms;
+}
+// Igual pero dejando el icono en la izquierda
+.titulo-seccion-jdowloader {
+  border: 1px solid white;
+  white-space: nowrap;
+  margin-right: 48%;
+  margin-left: 10%;
+  animation-duration: 3s;
+  animation-name: titulo-seccion-jdowloader;
+  transition-delay: 1000ms;
+}
+@keyframes titulo-seccion {
+  from {
+    margin-left: 68%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes titulo-seccion-inverso {
+  from {
+    margin-right: 68%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+@keyframes titulo-seccion-jdowloader {
+  from {
+    margin-left: 48%;
+  }
+
+  to {
+    margin-right: 48%;
+  }
+}
+// Solo en index.html -> Imagenes del carousel con un tamaño máximo para el responsive
+.img-carousel {
+  width: 97%;
+  border-radius: 45px;
+}
+
+// Imagenes de la lista de juegos con un tamaño máximo para el responsive
+.img-juego {
+  max-width: 200px;
+}
+.borde-juego {
+  --c: white; /* el color del borde */
+  --b: 5px; /* el tamaño del borde*/
+  --g: 10px; /* la separacion al hacer hover */
+
+  padding: calc(var(--g) + var(--b));
+  --_g: #0000 25%, var(--c) 0;
+  background: conic-gradient(
+        from 180deg at top var(--b) right var(--b),
+        var(--_g)
+      )
+      var(--_i, 200%) 0 /250% var(--_i, var(--b)) no-repeat,
+    conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0
+      var(--_i, 200%) / var(--_i, var(--b)) 250% no-repeat;
+  transition: 0.3s, background-position 0.3s 0.3s;
+  cursor: pointer;
+}
+.borde-juego:hover {
+  --_i: 100%;
+  transition: 0.3s, background-size 0.3s 0.3s;
+}
+// Borde personalizado blanco para algunos elementos al pasar el cursor
+.bordeado:hover {
+  border: 1px solid $white;
+}
+
+// Marcador de la página actual
+.marcador {
+  padding: 0.5% 2%;
+}
+
+// Popover personalizado (Solo se ve el título, ya que con boostrap 5.3.2 se ha bugeado el cuerpo, con una version antigua si se ve)
+.popover {
+  border-color: $red;
+  color: $red;
+}
+// Solo en generos.html -> Borde de los géneros al pasar el cursor
+.bordeado-genero {
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  transition: 1s;
+}
+.bordeado-genero::before,
+.bordeado-genero::after {
+  position: absolute;
+  background: red;
+  z-index: -1;
+  transition: 1s;
+  content: "";
+}
+
+.bordeado-genero::before {
+  height: 170px;
+  width: 30px;
+}
+
+.bordeado-genero::after {
+  height: 30px;
+  width: 170px;
+}
+
+.bordeado-genero:hover::before {
+  width: 0px;
+  background: red;
+}
+
+.bordeado-genero:hover::after {
+  height: 0px;
+  background: red;
+}
+
+.bordeado-genero:hover {
+  background: #363131;
+}
+
+// Solo en ejemplo-juego.html y sus otras 2 páginas de enlace y gameplay -> Borde del menú
+.bordeado-azul {
+  border: 1px solid $white;
+  margin-top: 3%;
+}
+
+// Solo en ejemplo-juego.html y sus otras 2 páginas de enlace y gameplay -> Borde del menú y los comentarios al pasar el cursor
+.bordeado-azul:hover {
+  border: 1px solid $primary;
+}
+
+// Solo en formulario.html y ejemplo-juego.html -> Usado para que se vea bien el texto de los placeholders de los input del formulario
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+#areaFormulario::placeholder {
+  color: $gray-600;
+}
+.form-control {
+  min-width: 75px;
+}
+// Solo en formulario.html y ejemplo-juego.html -> Usados para embellecer el fondo los input del formulario
+.bg-micolor {
+  background-color: $colorPropio;
+}
+.bg-micolor:focus {
+  background-color: $colorPropio;
+}
+
+// cambio el tamaño de la letra del juego en ejemplo-juego.html para que sea responsive
+#ejemplo-juego {
+  font-size: 3vh;
+}
+
+// Solo en ejemplo-juego-gameplay.html -> Usado para limitar el tamaño del video
+#gameplay {
+  max-width: 950px;
+}
+
+// Escondemos el boton menú para pantallas muy pequeñas (media querie abajo para mostrarlo)
+#secundario {
+  display: none;
+}
+
+// Media queries para cuadrar el menú de la navegación en dispositivos muy pequeños
+@media (max-width: 386px) {
+  #primario {
+    display: none;
+  }
+  #secundario {
+    display: block;
+  }
+  .logotipo{
+    margin-left: 25%;
+  }
+}
+@media (max-width: 330px) {
+  .logotipo{
+    margin-left: 6%;
+  }
+}
+// Escondemos los enlaces largos de ejemplo-juego-enlace.html para pantallas más pequeñas (media querie abajo para mostrarlo)
+.secundario {
+  display: none;
+}
+
+// Media queries para cuadrar los enlaces en ejemplo-juego-enlace.html en pantallas pequeñas
+@media (max-width: 700px) {
+  .primario {
+    display: none;
+  }
+  .secundario {
+    display: block;
+  }
+}
+
+// ACTUALIZACIÓN - AMPLIACIÓN PROYECTO FINAL 
+
+// Efecto chulo para las opciones del menú
+.dropdown-menu {
+  border: 2px solid rgb(216, 2, 134);
+  padding: 15px 25px;
+}
+.nav-link.active {
+  background-color: #d80286;
+}
+.button_slide {
+  color: #fff;
+  border: 2px solid rgb(216, 2, 134);
+  border-radius: 15px;
+  padding: 18px 10px;
+  margin: 1% 8px;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #d80286;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_down:hover {
+  box-shadow: inset 0 100px 0 0 #d80286;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #d80286;
+}
+
+.slide_left:hover {
+  box-shadow: inset 0 0 0 50px #d80286;
+}
+
+.slide_diagonal:hover {
+  box-shadow: inset 400px 50px 0 0 #d80286;
+}
+
+// Textarea chulo para el formulario
+textarea {
+  width: 100%;
+  border: 10px solid black;
+  padding: 2rem 1rem;
+  min-height: 3em;
+  resize: both;
+  background: #ffd73e33;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E")
+    1;
+}
+
+// Logo animado
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.rainbow {
+  padding: 1rem;
+}
+.rainbow:hover {
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #399953;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#399953, #399953),
+      linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33),
+      linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: rgb(42, 48, 53);
+    border-radius: 5px;
+  }
+}
+
+// Fondo en el texto del carousel para que haga contraste y le lea bien
+.carousel-caption {
+  font-size: 2vh;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+// Para mejorar el carusel de imagenes con animaciones
+.block {
+  margin: 2% auto;
+  width: 50%;
+}
+.block:before,
+.block:after {
+  border-radius: 45px;
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 50s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+}
+
+// Para ampliar, en este caso, el carousel de imagenes
+
+.ampliar {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.ampliar:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+// Y para cambiar el color de las flechas para que se vean mejor
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">>";
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<<";
+  font-size: 55px;
+  color: red;
+}
+
+// Ahora lo cuadro todo un poco para cuando se hace pequeña la página el carousel quede bien
+@media (max-width: 1000px) {
+  .block {
+    margin: 2% auto;
+    width: 70%;
+  }
+  .carousel-caption > h5,
+  .carousel-caption {
+    padding: 2%;
+    font-size: 1.5vh;
+  }
+}
+
+// Para ampliar, en este caso, los juegos
+
+.ampliar-juego {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.ampliar-juego:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+// circulo
+.circulo {
+  border: 1px solid red;
+  padding: 77px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+// Generos sin bordes
+.list-group-item {
+  border: none;
+}
+
+// Media query para arreglar el logo
+@media (max-width: 1200px) {
+  .logotipo {
+    width: 100%;
+  }
+}
+
+// Rotar el boton de volver a inicio
+
+.rotar {
+  margin-top: 65px;
+  margin-bottom: 55px;
+}
+.rotar:hover {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+// Para arreglar el menu interno del juego para que sea responsive
+@media (min-width: 576px) {
+  .descarga-juego {
+    margin-left: 5%;
+  }
+  .gameplay-juego {
+    margin-right: 5%;
+  }
+}

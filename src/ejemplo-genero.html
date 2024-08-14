@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS (el mio propio hecho con el sass de bosstrap) -->
+    <link rel="stylesheet" href="css/micss.css" />
+
+    <!-- Icono y título de la web -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>ITS FREE ¡ FIRE ! - Acción</title>
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav
+      id="INICIO"
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <!-- Logo Imagen -->
+        <a class="navbar-brand rainbow" href="index.html"
+          ><img
+            src="images/Nuevo Logotipo con Texto.png"
+            alt="LOGO : ITS FREE ¡ FIRE !"
+            title="INICIO"
+        /></a>
+
+        <!-- Botón menú responsive -->
+        <button
+          id="primario"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Menú"
+          title="MENÚ"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Elementos de la barra de navegación... -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto">
+            <!-- Inicio -->
+            <li>
+              <a class="nav-link button_slide slide_left" href="index.html">INICIO</a>
+            </li>
+
+            <!-- Requisitos -->
+            <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle button_slide slide_down"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                REQUISITOS
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item button_slide slide_right" href="bajos-requisitos.html"
+                    >BAJOS REQUISITOS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item button_slide slide_right" href="medios-requisitos.html"
+                    >MEDIOS REQUISITOS</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item button_slide slide_right" href="altos-requisitos.html"
+                    >ALTOS REQUISITOS</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- Géneros -->
+            <li>
+              <a class="nav-link active button_slide slide_left" href="generos.html">GÉNEROS</a>
+            </li>
+            <!-- Formulario -->
+            <li>
+              <a class="nav-link button_slide slide_left" href="formulario.html">FORMULARIO</a>
+            </li>
+            <!-- Ventana Modal -->
+            <li>
+              <!-- Boton que activa la ventana modal -->
+              <a
+                class="btn nav-link button_slide slide_diagonal"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                > Jdowloader</a
+              >
+
+              <!-- Contenido de la ventana modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Como descargar de forma facil
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- Video de mi tutorial de como subir una web a internet -->
+                    <div class="modal-body">
+                      <iframe
+                        src="https://www.veed.io/embed/f8be4cd5-a8d9-4c43-9742-c6cdb8af4215"
+                        width="100%"
+                        height="315"
+                        frameborder="0"
+                        title="Tutorial JDownloader"
+                        webkitallowfullscreen
+                        mozallowfullscreen
+                        allowfullscreen
+                      ></iframe>
+                      <p>
+                        En este video se explica como descargar un videojuego de
+                        esta web forma facil usando el programa jdowloader
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Me gusta <ion-icon name="happy-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Buscador -->
+          <form class="d-flex">
+            <input
+              class="form-control me-2 text-start bordeado"
+              placeholder="Buscar..."
+            />
+            <button class="btn btn-outline-success">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <!-- Botón menú responsive -->
+      <button
+        id="secundario"
+        class="navbar-toggler col-12 m-1"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Menú"
+        title="MENÚ"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <img
+      src="images/accion.png"
+      class="img-fluid p-4 titulo-seccion"
+      alt="Medios requisitos"
+    />
+    <!-- LISTA DE TODOS LOS JUEGOS -->
+    <div class="container">
+      <div class="list-group">
+        <div class="row">
+          <!-- Juego 1  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/nuevo-juego1.png"
+                alt="This War of Mine"
+              />
+              <p class="mb-1">This War of Mine</p>
+              <small class="text-secondary">[Build 29.04.2022]</small>
+            </a>
+          </div>
+
+          <!-- Juego 2  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/nuevo-juego2.png"
+                alt="Cyberpunk 2077"
+              />
+              <p class="mb-1">Cyberpunk 2077</p>
+              <small class="text-secondary">[Update 2.02]</small>
+            </a>
+          </div>
+
+          <!-- Juego 3  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/medios-requisitos-juego3.png"
+                alt="Salt and Sacrifice"
+              />
+              <p class="mb-1">Salt and Sacrifice</p>
+              <small class="text-secondary">[Update 2.0.0.0]</small>
+            </a>
+          </div>
+
+          <!-- Juego 4  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/nuevo-juego4.png"
+                alt="Dune Spice Wars"
+              />
+              <p class="mb-1">Dune Spice Wars</p>
+              <small class="text-secondary">[Update 3.2.29311]</small>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Juego 5  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/medios-requisitos-juego5.png"
+                alt="Bloody Spell"
+              />
+              <p class="mb-1">Bloody Spell</p>
+              <small class="text-secondary">[Build 21.11.2023]</small>
+            </a>
+          </div>
+
+          <!-- Juego 6  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/medios-requisitos-juego6.png"
+                alt="Lumencraft"
+              />
+              <p class="mb-1">Lumencraft</p>
+              <small class="text-secondary">[Update 9257]</small>
+            </a>
+          </div>
+
+          <!-- Juego 7  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/bajos-requisitos-juego4.png"
+                alt="Northgard"
+              />
+              <p class="mb-1">Northgard</p>
+              <small class="text-secondary">[Update 3.2.27.35051]</small>
+            </a>
+          </div>
+
+          <!-- Juego 8  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/nuevo-juego5.png"
+                alt="Chono Trigger"
+              />
+              <p class="mb-1">Chono Trigger</p>
+              <small class="text-secondary">[Build 29.08.2023]</small>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Juego 9  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/medios-requisitos-juego9.png"
+                alt="PixARK"
+              />
+              <p class="mb-1">PixARK</p>
+              <small class="text-secondary">[Update 1.188]</small>
+            </a>
+          </div>
+
+          <!-- Juego 10  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/altos-requisitos-juego4.png"
+                alt="Life is Strange 2"
+              />
+              <p class="mb-1">Life is Strange 2</p>
+              <small class="text-secondary">[Build 08.04.2020]</small>
+            </a>
+          </div>
+
+          <!-- Juego 11 -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/medios-requisitos-juego11.png"
+                alt="Stellaris"
+              />
+              <p class="mb-1">Stellaris</p>
+              <small class="text-secondary">[Update 3.10.0]</small>
+            </a>
+          </div>
+
+          <!-- Juego 12  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 ampliar-juego">
+            <a class="btn btn-lg text-white borde-juego" href="ejemplo-juego.html">
+              <img
+                class="img-juego"
+                src="images/medios-requisitos-juego12.png"
+                alt="Thief Simulator 2"
+              />
+              <p class="mb-1">Thief Simulator 2</p>
+              <small class="text-secondary">[Update 1.20]</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Marcador de página actual-->
+    <div class="container mt-3">
+      <button
+        class="marcador btn text-white btn-outline-success"
+        data-toggle="popover"
+        title="Volver atrás"
+        data-content="Esto no funciona con js 5.3"
+        data-bs-trigger="focus"
+        tabindex="0"
+        data-bs-placement="top"
+      >
+        <<
+      </button>
+      <button
+        class="btn text-white btn-primary border-success marcador"
+        data-toggle="popover"
+        title="Página actual"
+        data-content="Esto no funciona con js 5.3"
+        data-bs-trigger="focus"
+        tabindex="0"
+        data-bs-placement="top"
+      >
+        1
+      </button>
+      <button
+        class="btn text-white btn-outline-success marcador"
+        data-toggle="popover"
+        title="Página 2"
+        data-content="Esto no funciona con js 5.3"
+        data-bs-trigger="focus"
+        tabindex="0"
+        data-bs-placement="top"
+      >
+        2
+      </button>
+      <button
+        class="btn text-white btn-outline-success marcador"
+        data-toggle="popover"
+        title="Página 3"
+        data-content="Esto no funciona con js 5.3"
+        data-bs-trigger="focus"
+        tabindex="0"
+        data-bs-placement="top"
+      >
+        3
+      </button>
+      <button
+        class="btn text-white marcador"
+        data-toggle="popover"
+        title="Páginas intermedias"
+        data-content="Esto no funciona con js 5.3"
+        data-bs-trigger="focus"
+        tabindex="0"
+        data-bs-placement="top"
+      >
+        ...
+      </button>
+      <button
+        class="btn text-white btn-outline-success marcador"
+        data-toggle="popover"
+        title="Página 7"
+        data-content="Esto no funciona con js 5.3"
+        data-bs-trigger="focus"
+        tabindex="0"
+        data-bs-placement="top"
+      >
+        7
+      </button>
+      <button
+        class="btn text-white btn-outline-success marcador"
+        data-toggle="popover"
+        title="Página 8"
+        data-content="Esto no funciona con js 5.3"
+        data-bs-trigger="focus"
+        tabindex="0"
+        data-bs-placement="top"
+      >
+        8
+      </button>
+      <button
+        class="btn text-white btn-outline-success marcador"
+        data-toggle="popover"
+        title="Página 9"
+        data-content="Esto no funciona con js 5.3"
+        data-bs-trigger="focus"
+        tabindex="0"
+        data-bs-placement="top"
+      >
+        9
+      </button>
+      <button
+        class="btn text-white btn-outline-success marcador"
+        data-toggle="popover"
+        title="Ir adelante"
+        data-content="Esto no funciona con js 5.3"
+        data-bs-trigger="focus"
+        tabindex="0"
+        data-bs-placement="top"
+      >
+        >>
+      </button>
+    </div>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <!-- Volver al Inicio -->
+      <a class="btn text-white btn-lg bordeado p-1 rotar" href="#INICIO"
+        ><ion-icon name="home-outline"></ion-icon>Volver arriba<img
+          src="images/favicon.ico"
+          class="mb-3"
+          alt="Pequeño icono de un GamePad"
+      /></a>
+
+      <!-- Sección de enlaces del pie de página -->
+      <section>
+        <!-- Facebook -->
+        <a
+          class="btn btn-lg bordeado"
+          href="https://m.facebook.com/david.mendozatenorio/"
+          target="_blank"
+          title="Facebook"
+          ><ion-icon name="logo-facebook"></ion-icon
+        ></a>
+        <!-- Twitter -->
+        <a
+          class="btn btn-lg bordeado"
+          href="https://twitter.com/eldavid1996"
+          target="_blank"
+          title="Twitter"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
+        <!-- Instagram -->
+        <a
+          class="btn btn-lg bordeado"
+          href="https://www.instagram.com/eldavid1996/"
+          target="_blank"
+          title="Instagram"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <!-- Linkedin -->
+        <a
+          class="btn btn-lg bordeado"
+          href="https://es.linkedin.com/in/davidmendozatenorio"
+          target="_blank"
+          title="Linkedin"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+
+        <!-- Github -->
+        <a
+          class="btn btn-lg bordeado"
+          href="https://github.com/eldavid1996"
+          target="_blank"
+          title="Github"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+      </section>
+
+      <!-- Copyright -->
+      © 2023 Copyright:
+      <a href="index.html" title="INICIO">ITS FREE ¡ FIRE !</a>
+    </footer>
+
+    <!-- Scripts para que funcionen las acciones de algunos elemenos de Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Este script permite el dropdown de la barra de navegación pero no funciona bien con los Popovers -->
+    <!-- Si se comenta, y descomentan los de abajo, funcionaría el contenido del Popover pero dejaría de funcionar el dropdown del menú -->
+    <script src="libs/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+    <!-- Script para el Popover -->
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+
+    <!-- Scripts para cargar correctamente los iconos de Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

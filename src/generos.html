@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS (el mio propio hecho con el sass de bosstrap) -->
+    <link rel="stylesheet" href="css/micss.css" />
+
+    <!-- Icono y título de la web -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>ITS FREE ¡ FIRE ! - Géneros</title>
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav
+      id="INICIO"
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <!-- Logo Imagen -->
+        <a class="navbar-brand rainbow" href="index.html"
+          ><img
+            src="images/Nuevo Logotipo con Texto.png"
+            alt="LOGO : ITS FREE ¡ FIRE !"
+            title="INICIO"
+        /></a>
+
+        <!-- Botón menú responsive -->
+        <button
+          id="primario"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Menú"
+          title="MENÚ"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Elementos de la barra de navegación... -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto">
+            <!-- Inicio -->
+            <li>
+              <a class="nav-link button_slide slide_left" href="index.html"
+                >INICIO</a
+              >
+            </li>
+
+            <!-- Requisitos -->
+            <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle button_slide slide_down"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                REQUISITOS
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item button_slide slide_right"
+                    href="bajos-requisitos.html"
+                    >BAJOS REQUISITOS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item button_slide slide_right"
+                    href="medios-requisitos.html"
+                    >MEDIOS REQUISITOS</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item button_slide slide_right"
+                    href="altos-requisitos.html"
+                    >ALTOS REQUISITOS</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- Géneros -->
+            <li>
+              <a class="nav-link active button_slide slide_left" href="#INICIO"
+                >GÉNEROS</a
+              >
+            </li>
+            <!-- Formulario -->
+            <li>
+              <a class="nav-link button_slide slide_left" href="formulario.html"
+                >FORMULARIO</a
+              >
+            </li>
+            <!-- Ventana Modal -->
+            <li>
+              <!-- Boton que activa la ventana modal -->
+              <a
+                class="btn nav-link button_slide slide_diagonal"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Jdowloader</a
+              >
+
+              <!-- Contenido de la ventana modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Como descargar de forma facil
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- Video de mi tutorial de como subir una web a internet -->
+                    <div class="modal-body">
+                      <iframe
+                        src="https://www.veed.io/embed/f8be4cd5-a8d9-4c43-9742-c6cdb8af4215"
+                        width="100%"
+                        height="315"
+                        frameborder="0"
+                        title="Tutorial JDownloader"
+                        webkitallowfullscreen
+                        mozallowfullscreen
+                        allowfullscreen
+                      ></iframe>
+                      <p>
+                        En este video se explica como descargar un videojuego de
+                        esta web forma facil usando el programa jdowloader
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Me gusta <ion-icon name="happy-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Buscador -->
+          <form class="d-flex">
+            <input
+              class="form-control me-2 text-start bordeado"
+              placeholder="Buscar..."
+            />
+            <button class="btn btn-outline-success">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <!-- Botón menú responsive -->
+      <button
+        id="secundario"
+        class="navbar-toggler col-12 m-1"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Menú"
+        title="MENÚ"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <img
+      src="images/generos.png"
+      class="img-fluid p-4 titulo-seccion"
+      alt="Géneros"
+    />
+
+    <!-- GÉNEROS DE JUEGOS -->
+
+    <div class="container">
+      <div class="list-group">
+        <div class="row">
+          <!-- Genero  -->
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Batalla contra múltiples enemigos!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Acción</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Combate en un mundo abierto a tu medida!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">RPG</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Acción y aventuras sin límites!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Acción y Aventuras</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Aventúrate y descubre el mundo!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Aventuras</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Juega con tus personajes de Anime favoritos!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Anime</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Juegos recreativos de antaño!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Arcade</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Échate unas partidas con tus amigos!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Baloncesto</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Prueba tu suerte en los famosos juegos de cartas!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Cartas</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Reta a tus amigos a una carrera!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Carreras</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Juegos casuales para pasar el rato!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Casual</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Invita a un amigo para volveros los más fuertes!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Cooperativo</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Relájate echando una carrera con tu vehículo preferido!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Conducción</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Piensa en una estrategia para derrotar a tus enemigos!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Estrategia</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Explora un mundo lleno de aventuras y secretos!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Exploración</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Vive y descubre un mundo de fantasía!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Fantasía</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Lucha sin límites contra todos los oponentes!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Luchas</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Juegos en primera persona para gente solitaria!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Primera Persona</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Disfruta de unas partidas con tus amigos!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Futbol</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Unas partidas de golf para relajarse!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Golf</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Si estas loco estos son para tí!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Gore</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Juegos de terror solo para valientes!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Horror</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Relajate pescando y cazando!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Caza/Pesca</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Juegos de letras para todas las edades!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Letras</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Lanza hechizos y derrota a tus enemigos!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Magia</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Ambiente de la época medieval!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Medieval</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Combate con armas poderosas contra tus oponentes!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Militar</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Disfruta con otros jugadores!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Multijugador</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Juegos para un solo jugador!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Un Jugador</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Unas partiditas de pinball!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Pinball</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Simulación de la vida real!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Simulación</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Sobrevive a grandes hordas de enemigos!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Supervivencia</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Genero  -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-1 mt-2">
+            <a
+              href="ejemplo-genero.html"
+              class="list-group-item list-group-item-action btn btn-lg bg-transparent text-white"
+              data-toggle="tooltip"
+              title="¡Los zombies atacan y estan muy furiosos!"
+            >
+              <div class="circulo bordeado-genero bordeado">
+                <p class="mb-1">Zombie</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <!-- Volver al Inicio -->
+      <a class="btn text-white btn-lg bordeado p-1 rotar" href="#INICIO"
+        ><ion-icon name="home-outline"></ion-icon>Volver arriba<img
+          src="images/favicon.ico"
+          class="mb-3"
+          alt="Pequeño icono de un GamePad"
+      /></a>
+
+      <!-- Sección de enlaces del pie de página -->
+      <section>
+        <!-- Facebook -->
+        <a
+          class="btn btn-lg bordeado"
+          href="https://m.facebook.com/david.mendozatenorio/"
+          target="_blank"
+          title="Facebook"
+          ><ion-icon name="logo-facebook"></ion-icon
+        ></a>
+        <!-- Twitter -->
+        <a
+          class="btn btn-lg bordeado"
+          href="https://twitter.com/eldavid1996"
+          target="_blank"
+          title="Twitter"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
+        <!-- Instagram -->
+        <a
+          class="btn btn-lg bordeado"
+          href="https://www.instagram.com/eldavid1996/"
+          target="_blank"
+          title="Instagram"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <!-- Linkedin -->
+        <a
+          class="btn btn-lg bordeado"
+          href="https://es.linkedin.com/in/davidmendozatenorio"
+          target="_blank"
+          title="Linkedin"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+
+        <!-- Github -->
+        <a
+          class="btn btn-lg bordeado"
+          href="https://github.com/eldavid1996"
+          target="_blank"
+          title="Github"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+      </section>
+
+      <!-- Copyright -->
+      © 2023 Copyright:
+      <a href="index.html" title="INICIO">ITS FREE ¡ FIRE !</a>
+    </footer>
+    <!-- Scripts para que funcionen las acciones de algunos elemenos de Boostrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="libs/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para el tooltip -->
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+    <!-- Scripts para cargar correctamente los iconos de Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
