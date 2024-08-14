@@ -1,5 +1,4 @@
-# 🧹 MendoGames
-# 🦄 C# ASP.NET CORE 8 WEB API + ANGULAR 17
+# 🦄 MendoGames - TEMPLATE FOR A WEBSITE FOR DOWLOAD GAMES
     
 + David Mendoza
   - https://github.com/eldavid1996
@@ -7,7 +6,6 @@
 ## TABLE OF CONTENTS
 
 * [About the project](#-about-the-project)
-* [Features](#%EF%B8%8F-features)
 * [Installation](#%EF%B8%8F-installation-develop)
 
 ## 🔥 About the project
@@ -19,7 +17,7 @@ This pages was done with pure html, css and some javascript code
 
 **1º Just clone this repository**
 
-       https://github.com/eldavid1996/FCT_Limpieza
+       https://github.com/eldavid1996/MendoGames
 
 ## ⭐️ GIVE IT A STAR
 
