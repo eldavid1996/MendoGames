@@ -1,6 +1,7 @@
 # 🦄 MendoGames - TEMPLATE FOR A WEBSITE FOR DOWLOAD GAMES
-![mendogames1](https://github.com/user-attachments/assets/45c41301-d937-446a-9f34-571c830d81f4)
-![mendogames2](https://github.com/user-attachments/assets/c2af9407-4088-43c7-92c5-6c193a410bbf)
+![mendogames1](https://github.com/user-attachments/assets/a2395776-35fd-4394-a8d5-2f7face6ebc8)
+![mendogames2](https://github.com/user-attachments/assets/276580d0-3dc5-4326-b083-cad4786e36b7)
+
 
 + David Mendoza
   - https://github.com/eldavid1996
