@@ -1,4 +1,4 @@
-# 🦄 MendoGames - TEMPLATE FOR A WEBSITE FOR DOWLOAD GAMES
+# 🦄 MendoGames - Template for a Website for Download Games
 ![mendogames1](https://github.com/user-attachments/assets/a2395776-35fd-4394-a8d5-2f7face6ebc8)
 ![mendogames2](https://github.com/user-attachments/assets/276580d0-3dc5-4326-b083-cad4786e36b7)
 
